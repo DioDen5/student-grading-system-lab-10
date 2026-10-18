@@ -20,8 +20,8 @@ jobs:
       run:
         working-directory: Lab_10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
@@ -42,7 +42,7 @@ jobs:
         run: test -n "$(find dist -name '*.whl' -print -quit)" && test -n "$(find dist -name '*.tar.gz' -print -quit)"
       - name: Upload distributions
         if: matrix.python-version == '3.12'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: grade-service-distributions
           path: Lab_10/dist/*
@@ -54,7 +54,7 @@ jobs:
       run:
         working-directory: Lab_10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Build Docker image
         run: docker build --tag grade-service:ci .
       - name: Start container
