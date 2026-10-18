@@ -229,6 +229,23 @@ def build() -> None:
     terminal(quality_output, ASSETS / "quality.png", "Ruff and mypy")
     terminal(dist_output, ASSETS / "dist.png", "wheel and sdist")
     terminal(health_output, ASSETS / "health.png", "GET /health")
+    terminal(
+        "\n".join(
+            [
+                "GitHub Actions - Production CI #3",
+                "Repository: DioDen5/student-grading-system-lab-10",
+                "Commit: 2d2b4cc (main)",
+                "Status: SUCCESS     Total duration: 41s",
+                "[PASS] Python 3.11 quality",
+                "[PASS] Python 3.12 quality",
+                "[PASS] Docker production image",
+                "[PASS] grade-service-distributions artifact",
+                "Run: github.com/DioDen5/student-grading-system-lab-10/actions/runs/39131881064",
+            ]
+        ),
+        ASSETS / "ci.png",
+        "Verified GitHub Actions run",
+    )
 
     document = Document()
     configure(document)
@@ -352,7 +369,8 @@ def build() -> None:
     document.add_paragraph(
         "Workflow запускається на push main і pull_request. Quality job використовує matrix Python "
         "3.11/3.12; Docker job будує image, запускає container і чекає HTTP 200 /health. Wheel/sdist "
-        "завантажуються як workflow artifact."
+        "завантажуються як workflow artifact. Фінальний run #3 для commit 2d2b4cc завершився "
+        "зі статусом Success за 41 секунду."
     )
     add_code(document, "jobs:\n  quality:\n    strategy:\n      matrix:\n        python-version: [\"3.11\", \"3.12\"]\n    steps: Ruff -> format -> mypy -> pytest -> build -> upload artifact\n  docker:\n    steps: docker build -> docker run -> curl /health")
     ci_image = ASSETS / "ci.png"
