@@ -1,0 +1,8 @@
+{
+  "repeated_queries": 20000,
+  "uncached_seconds": 4.206120250048116,
+  "cached_seconds": 0.0015302080428227782,
+  "speedup": 2748.7244429124007,
+  "hits": 19999,
+  "misses": 1
+}

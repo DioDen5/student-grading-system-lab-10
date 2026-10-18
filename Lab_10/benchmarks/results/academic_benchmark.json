@@ -1,0 +1,38 @@
+[
+  {
+    "dataset_size": 10000,
+    "implementation": "python_loops",
+    "median_seconds": 0.00454104202799499,
+    "speedup": 1.0
+  },
+  {
+    "dataset_size": 10000,
+    "implementation": "numpy",
+    "median_seconds": 0.00033129192888736725,
+    "speedup": 13.70707111171083
+  },
+  {
+    "dataset_size": 100000,
+    "implementation": "python_loops",
+    "median_seconds": 0.046504541067406535,
+    "speedup": 1.0
+  },
+  {
+    "dataset_size": 100000,
+    "implementation": "numpy",
+    "median_seconds": 0.003187500056810677,
+    "speedup": 14.589659682684891
+  },
+  {
+    "dataset_size": 1000000,
+    "implementation": "python_loops",
+    "median_seconds": 0.4719167919829488,
+    "speedup": 1.0
+  },
+  {
+    "dataset_size": 1000000,
+    "implementation": "numpy",
+    "median_seconds": 0.014976458041928709,
+    "speedup": 31.510574173262537
+  }
+]

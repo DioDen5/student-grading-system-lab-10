@@ -1,0 +1,14 @@
+         2000006 function calls in 0.395 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.225    0.225    0.395    0.395 performance.py:60(baseline_grade_statistics)
+  1000000    0.085    0.000    0.085    0.000 {built-in method builtins.min}
+  1000000    0.085    0.000    0.085    0.000 {built-in method builtins.max}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 performance.py:54(_stats_from_parts)
+        1    0.000    0.000    0.000    0.000 <string>:2(__init__)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+
+

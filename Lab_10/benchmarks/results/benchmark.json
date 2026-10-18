@@ -1,0 +1,194 @@
+[
+  {
+    "dataset_size": 10000,
+    "implementation": "python_loops",
+    "workers": 1,
+    "median_seconds": 0.0020417909836396575,
+    "speedup": 1.0,
+    "peak_bytes": 452
+  },
+  {
+    "dataset_size": 10000,
+    "implementation": "numpy",
+    "workers": 1,
+    "median_seconds": 4.6042026951909065e-05,
+    "speedup": 44.346244481640866,
+    "peak_bytes": 146848
+  },
+  {
+    "dataset_size": 10000,
+    "implementation": "thread_pool",
+    "workers": 1,
+    "median_seconds": 0.00012512505054473877,
+    "speedup": 16.318003267536024,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 10000,
+    "implementation": "process_pool",
+    "workers": 1,
+    "median_seconds": 0.2090426249196753,
+    "speedup": 0.009767342829837773,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 10000,
+    "implementation": "thread_pool",
+    "workers": 2,
+    "median_seconds": 0.00018904195167124271,
+    "speedup": 10.80072949728363,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 10000,
+    "implementation": "process_pool",
+    "workers": 2,
+    "median_seconds": 0.2290924999397248,
+    "speedup": 0.00891251780035078,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 10000,
+    "implementation": "thread_pool",
+    "workers": 4,
+    "median_seconds": 0.0005926250014454126,
+    "speedup": 3.4453338597928345,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 10000,
+    "implementation": "process_pool",
+    "workers": 4,
+    "median_seconds": 0.2646740829804912,
+    "speedup": 0.00771435933827399,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 100000,
+    "implementation": "python_loops",
+    "workers": 1,
+    "median_seconds": 0.020266917068511248,
+    "speedup": 1.0,
+    "peak_bytes": 329
+  },
+  {
+    "dataset_size": 100000,
+    "implementation": "numpy",
+    "workers": 1,
+    "median_seconds": 0.00023250002413988113,
+    "speedup": 87.1695267279537,
+    "peak_bytes": 866848
+  },
+  {
+    "dataset_size": 100000,
+    "implementation": "thread_pool",
+    "workers": 1,
+    "median_seconds": 0.0002988330088555813,
+    "speedup": 67.82020883879584,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 100000,
+    "implementation": "process_pool",
+    "workers": 1,
+    "median_seconds": 0.19996095797978342,
+    "speedup": 0.10135437073951349,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 100000,
+    "implementation": "thread_pool",
+    "workers": 2,
+    "median_seconds": 0.0002709160326048732,
+    "speedup": 74.8088508223145,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 100000,
+    "implementation": "process_pool",
+    "workers": 2,
+    "median_seconds": 0.22807108401320875,
+    "speedup": 0.08886228237218133,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 100000,
+    "implementation": "thread_pool",
+    "workers": 4,
+    "median_seconds": 0.0005289580440148711,
+    "speedup": 38.31479131063458,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 100000,
+    "implementation": "process_pool",
+    "workers": 4,
+    "median_seconds": 0.25918095791712403,
+    "speedup": 0.07819601112436593,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 1000000,
+    "implementation": "python_loops",
+    "workers": 1,
+    "median_seconds": 0.19070816691964865,
+    "speedup": 1.0,
+    "peak_bytes": 329
+  },
+  {
+    "dataset_size": 1000000,
+    "implementation": "numpy",
+    "workers": 1,
+    "median_seconds": 0.002662000013515353,
+    "speedup": 71.64093386603912,
+    "peak_bytes": 8066848
+  },
+  {
+    "dataset_size": 1000000,
+    "implementation": "thread_pool",
+    "workers": 1,
+    "median_seconds": 0.004790499922819436,
+    "speedup": 39.80965869787717,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 1000000,
+    "implementation": "process_pool",
+    "workers": 1,
+    "median_seconds": 0.21887137496378273,
+    "speedup": 0.8713253021378683,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 1000000,
+    "implementation": "thread_pool",
+    "workers": 2,
+    "median_seconds": 0.0019694999791681767,
+    "speedup": 96.8307534586493,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 1000000,
+    "implementation": "process_pool",
+    "workers": 2,
+    "median_seconds": 0.23054341704118997,
+    "speedup": 0.827211504744791,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 1000000,
+    "implementation": "thread_pool",
+    "workers": 4,
+    "median_seconds": 0.001946166972629726,
+    "speedup": 97.99167779625681,
+    "peak_bytes": 0
+  },
+  {
+    "dataset_size": 1000000,
+    "implementation": "process_pool",
+    "workers": 4,
+    "median_seconds": 0.2610049999784678,
+    "speedup": 0.7306686344529091,
+    "peak_bytes": 0
+  }
+]

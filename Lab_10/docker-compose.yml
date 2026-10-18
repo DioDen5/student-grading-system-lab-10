@@ -1,0 +1,14 @@
+services:
+  grade-service:
+    build: .
+    image: grade-service:1.0.0
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - grade_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  grade_data:
