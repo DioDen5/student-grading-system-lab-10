@@ -42,7 +42,7 @@ jobs:
         run: test -n "$(find dist -name '*.whl' -print -quit)" && test -n "$(find dist -name '*.tar.gz' -print -quit)"
       - name: Upload distributions
         if: matrix.python-version == '3.12'
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: grade-service-distributions
           path: Lab_10/dist/*
